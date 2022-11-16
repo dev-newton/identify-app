@@ -1,0 +1,9 @@
+.btn-create {
+  width: max-content;
+  color: #fff;
+  border: none;
+  background-color: var(--primary-color);
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 15px;
+}
