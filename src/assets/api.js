@@ -15,7 +15,7 @@ export default {
       header["Accept"] = "*/*";
       header["Access-Control-Allow-Origin"] = "*";
       header["x-api-key"] = process.env.REACT_APP_API_KEY;
-      header["app-id"] = process.env.REACT_APP_APP_ID;
+      // header["app-id"] = process.env.REACT_APP_APP_ID;
     }
     if (token && token !== undefined) {
       header["Authorization"] = `Bearer ${token}`;

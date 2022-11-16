@@ -25,6 +25,16 @@ const Login = (props) => {
         <div className="form-wrapper">
           <h3 className="header-nav">Login</h3>
           <form onSubmit={handleSubmit}>
+            <p style={{ color: "orange" }}>
+              Kindly use below credentials to login:
+            </p>
+            <p style={{ color: "orange" }}>
+              Username: <b>test</b>
+            </p>
+            <p style={{ color: "orange" }}>
+              Password: <b>test</b>
+            </p>
+            <br />
             <Input
               label="Username"
               type="text"

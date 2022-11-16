@@ -57,6 +57,30 @@ const Register = (props) => {
       password,
     };
 
+    if (data.number.length !== 11) {
+      return toast.error("BVN must be 11 characters long!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        pauseOnFocusLoss: false,
+        progress: undefined,
+      });
+    }
+
+    if (!data.image) {
+      return toast.error("Image cannot be emmpty!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        pauseOnFocusLoss: false,
+        progress: undefined,
+      });
+    }
+
     setLoading(true);
 
     try {
